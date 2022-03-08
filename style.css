@@ -1,0 +1,158 @@
+
+body {
+    background: #131213;
+}
+
+header {
+    font-family: Tahoma;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.grid-row1, .grid-row2, .grid-row3, .grid-row4, .grid-row5, .grid-row6, .button-row {
+    font-family: Tahoma;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.letter {
+    outline: none;
+    user-select: none;
+    background: rgb(19, 18, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #585455 1px;
+    height: 50px;
+    width: 50px;
+}
+
+button {
+    font-family: Tahoma;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.answer-box-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.answer-box {
+    font-family: Tahoma;
+    display: flex;
+    padding-left: 180px;
+    padding-right: 180px;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+    height: 20px;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.answer {
+    font-size: 20px;
+    color: white;
+}
+
+.keyboard {
+    font-family: Tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.keyboard-row1, .keyboard-row2, .keyboard-row3 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 550px;
+    margin-bottom: 7px;
+    color: white;
+    gap: 7px;
+}
+
+.keyboard-letter, .keyboard-letter-wider {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.keyboard-letter-wider {
+    flex-grow: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        font-size: 15px;
+    }
+
+    .keyboard-row1, .keyboard-row2, .keyboard-row3 {
+        width: 350px;
+    }
+
+    button {
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .keyboard-row1, .keyboard-row2, .keyboard-row3 {
+        margin-top: -5px;
+        gap: 1px;
+    }
+
+    .keyboard-letter, .keyboard-letter-wider {
+        height: 40px;
+    }
+
+    .grid {
+        margin-top: -10px;
+    }
+
+    .grid-row {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 5px;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .answer-box {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 20px;
+        width: auto;
+        margin-top: 50px;
+    }
+}
+

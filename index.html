@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="./images/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wordle-Solver</title>
+</head>
+<header>
+    <h1>WORDLE SOLVER</h1>
+</header>
+<body onload="document.querySelector('.grid-row1').firstElementChild.focus()">
+<div class="grid">
+    <div class="grid-row1">
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+    </div>
+    <div class="grid-row2">
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+    </div>
+    <div class="grid-row3">
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+    </div>
+    <div class="grid-row4">
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+    </div>
+    <div class="grid-row5">
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+    </div>
+    <div class="grid-row6">
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+        <div class="letter" tabindex="0"></div>
+    </div>
+    <div class="button-row">
+        <button onclick="window.location.reload()">Clear</button>
+        <button onclick="submit()">Submit
+        </button>
+    </div>
+</div>
+<div class="keyboard">
+    <div class="keyboard-row1">
+        <div class="keyboard-letter">Q</div>
+        <div class="keyboard-letter">W</div>
+        <div class="keyboard-letter">E</div>
+        <div class="keyboard-letter">R</div>
+        <div class="keyboard-letter">T</div>
+        <div class="keyboard-letter">Y</div>
+        <div class="keyboard-letter">U</div>
+        <div class="keyboard-letter">I</div>
+        <div class="keyboard-letter">O</div>
+        <div class="keyboard-letter">P</div>
+    </div>
+    <div class="keyboard-row2">
+        <div class="keyboard-letter">A</div>
+        <div class="keyboard-letter">S</div>
+        <div class="keyboard-letter">D</div>
+        <div class="keyboard-letter">F</div>
+        <div class="keyboard-letter">G</div>
+        <div class="keyboard-letter">H</div>
+        <div class="keyboard-letter">J</div>
+        <div class="keyboard-letter">K</div>
+        <div class="keyboard-letter">L</div>
+    </div>
+    <div class="keyboard-row3">
+        <div class="keyboard-letter keyboard-letter-wider">Enter</div>
+        <div class="keyboard-letter">Z</div>
+        <div class="keyboard-letter">X</div>
+        <div class="keyboard-letter">C</div>
+        <div class="keyboard-letter">V</div>
+        <div class="keyboard-letter">B</div>
+        <div class="keyboard-letter">N</div>
+        <div class="keyboard-letter">M</div>
+        <div class="keyboard-letter keyboard-letter-wider">Delete</div>
+    </div>
+</div>
+<div class="answer-box-title"></div>
+<div class="answer-box"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
