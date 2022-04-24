@@ -253,7 +253,7 @@ function submit() {
         if (nextRow < 7)
             document.querySelector(`.grid-row${nextRow}`).firstElementChild.focus();
         filterArray();
-        document.querySelector('.keyboard');
+        document.querySelector('.grid-row1').scrollIntoView();
         currentRow++;
     } else {
         alert('Fill entire row!');

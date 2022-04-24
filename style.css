@@ -63,12 +63,15 @@ button {
     padding-left: 180px;
     padding-right: 180px;
     justify-content: space-evenly;
+    align-content: flex-start;
     gap: 30px;
     flex-wrap: wrap;
-    height: 20px;
+    height: 400px;
     width: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .answer {
@@ -150,11 +153,8 @@ button {
     .answer-box {
         padding-left: 10px;
         padding-right: 10px;
-        height: 20px;
         width: auto;
         margin-top: 50px;
-        overflow: hidden;
-        overflow-y: scroll;
     }
 }
 
