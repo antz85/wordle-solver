@@ -153,6 +153,8 @@ button {
         height: 20px;
         width: auto;
         margin-top: 50px;
+        overflow: hidden;
+        overflow-y: scroll;
     }
 }
 
